@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>multi-typeahead demo</title> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<link rel="stylesheet" href="./css/bootstrap.min.css" />
+	<style>
+	body{
+		padding:40px;
+	}
+	
+	.s4-multi-item{
+		border: 1px solid #999999;
+		background: #eaeaea;
+		padding: 2px 2px;
+	}
+	
+	.s4-multi-item-text {
+		padding-right: 3px;
+	}
+	
+	.s4-icon-cursor {
+		cursor: pointer;
+	}
+	
+	.s4-multi-container {
+	  display: inline-block;
+	  height: 25px;
+	  padding: 4px 6px;
+	  margin-bottom: 10px;
+	  font-size: 14px;
+	  line-height: 20px;
+	  color: #555555;
+	  vertical-align: middle;
+	  -webkit-border-radius: 4px;
+	     -moz-border-radius: 4px;
+	          border-radius: 4px;	
+	
+	  	background-color: #ffffff;
+  		border: 1px solid #cccccc;
+  		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  		-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+     	-moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+       	-o-transition: border linear 0.2s, box-shadow linear 0.2s;
+		transition: border linear 0.2s, box-shadow linear 0.2s;
+	
+	}
+	
+	.s4-multi-container-focus {
+		border-color: rgba(82, 168, 236, 0.8);
+		outline: 0;
+		outline: thin dotted \9;
+		/* IE6-9 */
+  		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+		-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+	}
+	
+	input.s4-multi-hidden-input {
+	  	height: 15px;
+	  	padding: 4px 6px;
+	  	margin-botto0m: 0px;
+	  	margin-top: 0px;
+	  	border: 0px;
+		-webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
+		   -moz-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
+				box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
+	  	
+	}
+	
+	input[type="text"].s4-multi-hidden-input:focus{
+		border-color: rgba(82, 168, 236, 0);
+  		outline: 0;
+/*   		outline: thin dotted \9; */
+  		/* IE6-9 */
+
+  -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0), 0 0 0px rgba(0, 0, 0, 0);
+     -moz-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0), 0 0 0px rgba(0, 0, 0, 0);
+          box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0), 0 0 0px rgba(0, 0, 0, 0);
+	}
+	</style>
+</head> 
+<body> 
+	<h2>multi-typeahead demo</h2>
+	<div>
+	<input type="text" style="width:300px" placeholder="type any text to start ..." />
+	</div>
+	<div class="s4-multi-container s4-multi-container-focus">
+	<span class="s4-multi-item"><span class="s4-multi-item-text">some text</span><span class="s4-icon-cursor"><i class="icon-remove s4-icon-cursor"></i></span></span>
+	<input type="text" class="s4-multi-hidden-input" style="width:300px;" placeholder="type any text to start ..." />
+	</div>
+	<script type="text/javascript" src="./js/lib/jquery-1.9.1.min.js"></script> 
+	<script type="text/javascript"> 
+
+		
+	</script> 
+	 
+</body> 
+</html>
