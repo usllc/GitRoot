@@ -12,7 +12,7 @@
 	.s4-multi-item{
 		border: 1px solid #999999;
 		background: #eaeaea;
-		padding: 2px 2px;
+		padding: 2px 2px 5px 2px;
 	}
 	
 	.s4-multi-item-text {
@@ -24,10 +24,14 @@
 	}
 	
 	.s4-multi-container {
-	  display: inline-block;
-	  height: 25px;
+	  width: 300px;
+	  overflow-x: hidden;
+	  overflow-y: auto;
+	  max-height: 105px;
+	  display: block;
+	  height: 23px;
 	  padding: 4px 6px;
-	  margin-bottom: 10px;
+	  margin-bottom: 0px;
 	  font-size: 14px;
 	  line-height: 20px;
 	  color: #555555;
@@ -61,7 +65,7 @@
 	input.s4-multi-hidden-input {
 	  	height: 15px;
 	  	padding: 4px 6px;
-	  	margin-botto0m: 0px;
+	  	margin-bottom: 0px;
 	  	margin-top: 0px;
 	  	border: 0px;
 		-webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
@@ -90,7 +94,9 @@
 	<div class="s4-multi-container s4-multi-container-focus">
 	<span class="s4-multi-item"><span class="s4-multi-item-text">some text</span><span class="s4-icon-cursor"><i class="icon-remove s4-icon-cursor"></i></span></span>
 	<span class="s4-multi-item"><span class="s4-multi-item-text">some text 123</span><span class="s4-icon-cursor"><i class="icon-remove s4-icon-cursor"></i></span></span>
-	<input type="text" class="s4-multi-hidden-input" style="width:300px;" placeholder="type any text to start ..." />
+	<span class="s4-multi-item"><span class="s4-multi-item-text">short</span><span class="s4-icon-cursor"><i class="icon-remove s4-icon-cursor"></i></span></span>
+	<span class="s4-multi-item"><span class="s4-multi-item-text">long very long long long</span><span class="s4-icon-cursor"><i class="icon-remove s4-icon-cursor"></i></span></span>
+	<input type="text" class="s4-multi-hidden-input" style="width:30px;" placeholder="type any text to start ..." />
 	</div>
 	<script type="text/javascript" src="./js/lib/jquery-1.9.1.min.js"></script> 
 	<script type="text/javascript"> 
