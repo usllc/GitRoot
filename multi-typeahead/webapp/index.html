@@ -4,15 +4,44 @@
 	<title>multi-typeahead demo</title> 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 	<link rel="stylesheet" href="./css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./css/font-awesome.min.css">
+	<!--[if IE 7]>
+	  <link rel="stylesheet" href="./css/font-awesome-ie7.min.css">
+	<![endif]-->
 	<style>
 	body{
 		padding:40px;
 	}
 	
 	.s4-multi-item{
-		border: 1px solid #999999;
-		background: #eaeaea;
-		padding: 2px 2px 5px 2px;
+		display: inline-block;
+		
+		padding: 2px;
+		margin-bottom: 2px;
+		
+	color: #333;
+    cursor: default;
+    border: 1px solid #aaaaaa;
+
+    border-radius: 3px;
+
+    -webkit-box-shadow: 0 0 2px #fff inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+            box-shadow: 0 0 2px #fff inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+
+    background-clip: padding-box;
+
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+
+    background-color: #e4e4e4;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#f4f4f4', GradientType=0);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eee));
+    background-image: -webkit-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+    background-image: -moz-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+    background-image: linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);		
 	}
 	
 	.s4-multi-item-text {
@@ -21,15 +50,20 @@
 	
 	.s4-icon-cursor {
 		cursor: pointer;
+		color: #aaa;
+	}
+	.s4-icon-cursor:hover {
+		color: #999;
 	}
 	
 	.s4-multi-container {
 	  width: 300px;
+	  position: relative;
 	  overflow-x: hidden;
 	  overflow-y: auto;
 	  max-height: 105px;
 	  display: block;
-	  height: 23px;
+	  height: auto;
 	  padding: 4px 6px;
 	  margin-bottom: 0px;
 	  font-size: 14px;
@@ -96,7 +130,11 @@
 	<span class="s4-multi-item"><span class="s4-multi-item-text">some text 123</span><span class="s4-icon-cursor"><i class="icon-remove s4-icon-cursor"></i></span></span>
 	<span class="s4-multi-item"><span class="s4-multi-item-text">short</span><span class="s4-icon-cursor"><i class="icon-remove s4-icon-cursor"></i></span></span>
 	<span class="s4-multi-item"><span class="s4-multi-item-text">long very long long long</span><span class="s4-icon-cursor"><i class="icon-remove s4-icon-cursor"></i></span></span>
-	<input type="text" class="s4-multi-hidden-input" style="width:30px;" placeholder="type any text to start ..." />
+	<span class="s4-multi-item"><span class="s4-multi-item-text">short</span><span class="s4-icon-cursor"><i class="icon-remove s4-icon-cursor"></i></span></span>
+	<span class="s4-multi-item"><span class="s4-multi-item-text">long very long long long</span><span class="s4-icon-cursor"><i class="icon-remove s4-icon-cursor"></i></span></span>
+	<span class="s4-multi-item"><span class="s4-multi-item-text">short</span><span class="s4-icon-cursor"><i class="icon-remove s4-icon-cursor"></i></span></span>
+	<span class="s4-multi-item"><span class="s4-multi-item-text">long very long long long</span><span class="s4-icon-cursor"><i class="icon-remove s4-icon-cursor"></i></span></span>
+	<input type="text" class="s4-multi-hidden-input" style="width:30px;" />
 	</div>
 	<script type="text/javascript" src="./js/lib/jquery-1.9.1.min.js"></script> 
 	<script type="text/javascript"> 
